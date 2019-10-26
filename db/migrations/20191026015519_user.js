@@ -4,6 +4,8 @@ exports.up = function(knex) {
   tbl.text('username',128);
   tbl.text('email',128);
   tbl.text('password',128);
+  tbl.timestamp('created_at').defaultTo(knex.fn.now());
+  tbl.timestamp('updated_at').defaultTo(knex.fn.now());
     })
   };
   
