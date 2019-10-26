@@ -14,4 +14,7 @@ server.get('/', (req, res) => {
 	res.json({ api: 'my boy is alive' });
 });
 
+//=========Routers==================//
+
+
 module.exports = server;
